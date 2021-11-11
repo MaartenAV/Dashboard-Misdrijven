@@ -166,7 +166,7 @@ col1, col2 = st.columns(2)
 
 #Boxplots creeren en opmaken
 with col1:
-    st.subheader('Boxplots percentage soorten misdrijven per gemeente')
+    st.subheader('Percentage soorten misdrijven per gemeente')
     
     data = pd.read_csv('boxplots.csv')
 
@@ -174,9 +174,9 @@ with col1:
                  y="GeregistreerdeMisdrijvenRelatief_2", 
                  color= 'SoortMisdrijf', 
                  hover_data=['RegioS'], height=560)
-    fig.update_layout(title_text= 'Box Plot Percentage Misdrijven in Gemeenten',
+    fig.update_layout(title_text= 'Verdeling percentage misdrijven in gemeenten',
                       yaxis_title= 'Percentage over totaal aantal misdrijven',
-                     xaxis_title= 'Soort Misdrijf')
+                     xaxis_title= 'Soort misdrijf')
 
     st.plotly_chart(fig, use_container_width=True)
 ''
@@ -190,7 +190,7 @@ with col1:
 # In[8]:
 
 with col2:
-    st.subheader('Barplots totaal geregistreerde misdrijven')
+    st.subheader('Verdeling totaal geregistreerde misdrijven')
     
     data_final = pd.read_csv('barplots.csv')
     data = pd.read_csv('barplot_nl.csv')
@@ -422,7 +422,7 @@ with col2:
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader('Voorspellen aantal geregistreerde misdrijven')
+    st.subheader('Voorspellen aantal geregistreerde misdrijven voor de komende jaren')
 
     data_nl = pd.read_csv('voorspelmodel.csv')
 
@@ -431,7 +431,7 @@ with col1:
     pred_tijd_aantal = explanatory_data.assign(Misdrijven=mdl_tijd_vs_aantal.predict(explanatory_data))
 
     fig13 = px.box(data_nl, x="Perioden", y="GeregistreerdeMisdrijvenPer1000Inw_3",
-                     title='Voorspelmodel Jaren t.o.v. Misdrijven per 1000 inwoners', hover_data=['RegioS'])
+                     title='Voorspelmodel Misdrijven per 1000 inwoners', hover_data=['RegioS'])
     fig13.update_layout(coloraxis_showscale=False, 
                       legend=dict(
                           yanchor="top",

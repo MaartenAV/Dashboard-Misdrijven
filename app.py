@@ -172,7 +172,7 @@ with col1:
     fig = px.box(data, x="SoortMisdrijf", 
                  y="GeregistreerdeMisdrijvenRelatief_2", 
                  color= 'SoortMisdrijf', 
-                 hover_data=['RegioS'])
+                 hover_data=['RegioS'], height=600)
     fig.update_layout(title_text= 'Box Plot Percentage Misdrijven in Gemeenten',
                       yaxis_title= 'Percentage over totaal aantal misdrijven',
                      xaxis_title= 'Soort Misdrijf')
@@ -446,7 +446,7 @@ with col1:
     fig13.update_layout(yaxis_title= 'Misdrijven per 1000 inwoners', xaxis_title= 'Jaren')
     fig13.update_traces(name='Voorspellingslijn o.b.v. Linear Regression Modeling')
     fig13.update_xaxes(type='category')
-    st.plotly_chart(fig13, use_container_width=True, height=600)
+    st.plotly_chart(fig13, use_container_width=True)
 
 
 # In[16]:

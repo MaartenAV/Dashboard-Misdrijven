@@ -49,9 +49,9 @@ st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('Hulpbronnen:')
-st.sidebar.write('https://opendata.cbs.nl/statline/portal.html?_la=nl&_catalog=CBS&tableId=85068NED&_theme=299')
-st.sidebar.write('https://opendata.cbs.nl/statline/portal.html?_la=nl&_catalog=CBS&tableId=83648NED&_theme=407')
-st.sidebar.write('https://www.politie.nl/algemeen/open-data.html')
+st.sidebar.write('CBS Dataportaal. (2021, oktober 19). [Vermogen huishoudens]. Central Bureau voor Statistiek (CBS). https://opendata.cbs.nl/statline/portal.html?_la=nl&_catalog=CBS&tableId=85068NED&_theme=299')
+st.sidebar.write('CBS Dataportaal. (2021, 3 januari). [Geregistreerde criminaliteit]. Centraal Bureau voor Statistiek (CSB).')
+st.sidebar.write('Open data API. (2021, 8 december). [Politiebureau gegevens]. Politie Nederland. https://www.politie.nl/algemeen/open-data.html')
 
 
 # ## Politie

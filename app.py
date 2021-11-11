@@ -446,7 +446,7 @@ with col1:
     fig13.update_layout(yaxis_title= 'Misdrijven per 1000 inwoners', xaxis_title= 'Jaren')
     fig13.update_traces(name='Voorspellingslijn o.b.v. Linear Regression Modeling')
     fig13.update_xaxes(type='category')
-    st.plotly_chart(fig13, use_container_width=True)
+    st.plotly_chart(fig13, use_container_width=True, height=600)
 
 
 # In[16]:

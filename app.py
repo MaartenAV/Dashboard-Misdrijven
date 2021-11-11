@@ -176,7 +176,7 @@ with col1:
                       yaxis_title= 'Percentage over totaal aantal misdrijven',
                      xaxis_title= 'Soort Misdrijf')
 
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 ''
 ''
 ''

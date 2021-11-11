@@ -120,7 +120,7 @@ with col1:
         bins=9,
         legend_name= 'Gemiddel vermogen (x1000 euro)').add_to(m1)
 
-    folium_static(m1)
+    folium_static(m1, width = 500, height = 600)
 ''
 ''
 ''
@@ -150,7 +150,7 @@ with col2:
         bins= 9,
         legend_name='Gemiddel vermogen (x1000 euro)').add_to(m2)
 
-    folium_static(m2)
+    folium_static(m2, width = 500, height = 600)
 ''
 ''
 ''

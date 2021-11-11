@@ -254,6 +254,7 @@ with col2:
         fig.update_layout(xaxis_title="Jaartallen")
         fig.update_layout(title={'text': "Nederland", 'xanchor': 'center', 'x': 0.5, 'y': 0.98, 'yanchor': 'top',})
         fig.update_xaxes(type='category')
+        fig.update_traces(texttemplate='%{text:.1f}', textposition='outside')
         st.plotly_chart(fig)
 
     if dropdown == 'Groningen':
@@ -451,6 +452,7 @@ with col1:
 # In[16]:
 
 with col2:
+    st.subheader('Summary voorspelmodel')
     img = Image.open("summary.png")
     st.image(img, width=650)
     ''

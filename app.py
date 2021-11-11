@@ -174,8 +174,7 @@ with col1:
                  y="GeregistreerdeMisdrijvenRelatief_2", 
                  color= 'SoortMisdrijf', 
                  hover_data=['RegioS'], height=560)
-    fig.update_layout(title_text= 'Verdeling percentage misdrijven in gemeenten',
-                      yaxis_title= 'Percentage over totaal aantal misdrijven',
+    fig.update_layout(yaxis_title= 'Percentage over totaal aantal misdrijven',
                      xaxis_title= 'Soort misdrijf')
 
     st.plotly_chart(fig, use_container_width=True)

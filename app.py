@@ -34,6 +34,7 @@ gemeente = gpd.read_file('bestuurlijkegrenzen.gpkg', layer= 'gemeenten')
 
 
 st.set_page_config(page_title = "Dashboard Criminaliteit en vermogen in Nederland", layout="wide")
+st.title('Dashboard Criminaliteit en Vermogen in Nederland')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.sidebar.subheader('Gemaakt Door:')
 st.sidebar.write('• Robin Pelders')

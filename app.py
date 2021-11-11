@@ -62,7 +62,7 @@ st.sidebar.write('Open data API. (2021, 8 december). [Politiebureau gegevens]. P
 
 #Politiebureaus
 st.subheader("Aantal politiebureau's per provincie en gemeente")
-st.markdown("Deze kaart geeft het aantal politiebureau's per gemeente en provincie dat beschikbaar is binnen een straal van 20km weer. ")
+st.markdown("Deze kaart geeft het aantal politiebureau's per gemeente en provincie weer dat beschikbaar is binnen een straal van 20km.")
 m = folium.Map(location=[52.0893191, 5.1101691], zoom_start= 7, tiles='cartodbpositron')
 
 folium.Choropleth(
@@ -107,6 +107,7 @@ col1, col2 = st.columns(2)
 #Inkomen provincies
 with col1:
     st.subheader("Gemiddeld vermogen per provincie")
+    st.markdown("Deze kaart geeft het gemiddeld vermogen per provincie in Nederland weer.")
     m1 = folium.Map(location=[52.0893191, 5.1101691], zoom_start= 7, tiles='cartodbpositron', prefer_canvas=True)
 
     folium.Choropleth(
@@ -136,7 +137,7 @@ with col1:
 #Inkomen gemeentes
 with col2:
     st.subheader("Gemiddeld vermogen per gemeente")
-    
+    st.markdown("Deze kaart geeft het gemiddeld vermogen per gemeente in Nederland weer.")
     m2 = folium.Map(location=[52.0893191, 5.1101691], zoom_start= 7, tiles='cartodbpositron', prefer_canvas=True)
 
     folium.Choropleth(

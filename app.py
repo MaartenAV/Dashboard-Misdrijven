@@ -61,7 +61,7 @@ st.sidebar.write('Open data API. (2021, 8 december). [Politiebureau gegevens]. P
 
 #Politiebureaus
 st.subheader("Aantal politiebureau's per provincie en gemeente")
-
+st.markdown("Deze kaart geeft het aantal politiebureau's per gemeente en provincie dat beschikbaar is binnen een straal van 20km weer. ")
 m = folium.Map(location=[52.0893191, 5.1101691], zoom_start= 7, tiles='cartodbpositron')
 
 folium.Choropleth(

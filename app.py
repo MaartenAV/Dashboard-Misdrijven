@@ -176,7 +176,7 @@ with col1:
                       yaxis_title= 'Percentage over totaal aantal misdrijven',
                      xaxis_title= 'Soort Misdrijf')
 
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, layout = 'small')
 ''
 ''
 ''
@@ -254,7 +254,6 @@ with col2:
         fig.update_layout(xaxis_title="Jaartallen")
         fig.update_layout(title={'text': "Nederland", 'xanchor': 'center', 'x': 0.5, 'y': 0.98, 'yanchor': 'top',})
         fig.update_xaxes(type='category')
-        fig.update_traces(texttemplate='%{text:.1f}', textposition='outside')
         st.plotly_chart(fig)
 
     if dropdown == 'Groningen':

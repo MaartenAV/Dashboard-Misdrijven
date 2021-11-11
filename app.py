@@ -173,7 +173,7 @@ with col1:
     fig = px.box(data, x="SoortMisdrijf", 
                  y="GeregistreerdeMisdrijvenRelatief_2", 
                  color= 'SoortMisdrijf', 
-                 hover_data=['RegioS'], height=550)
+                 hover_data=['RegioS'], height=560)
     fig.update_layout(title_text= 'Box Plot Percentage Misdrijven in Gemeenten',
                       yaxis_title= 'Percentage over totaal aantal misdrijven',
                      xaxis_title= 'Soort Misdrijf')

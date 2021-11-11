@@ -258,6 +258,7 @@ with col2:
 
     if dropdown == 'Groningen':
         #Groningen
+        print('Groningen is onderweg')
         fig1 = px.bar(data_gr, x="Perioden", y="TotaalGeregistreerdeMisdrijven_1", color="SoortMisdrijf", color_discrete_sequence = colors)
         fig1.update_layout({'updatemenus':[{'type': 'dropdown', 'buttons': dropdown_buttons}]})
         fig1.update_layout(updatemenus=[go.layout.Updatemenu(buttons=dropdown_buttons, x = 1, xanchor = 'left',

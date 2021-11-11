@@ -166,7 +166,7 @@ col1, col2 = st.columns(2)
 
 #Boxplots creeren en opmaken
 with col1:
-    st.subheader('Percentage soorten misdrijven per gemeente')
+    st.subheader('Procentuele verdeling soorten misdrijven per gemeente')
     
     data = pd.read_csv('boxplots.csv')
 
@@ -190,7 +190,7 @@ with col1:
 # In[8]:
 
 with col2:
-    st.subheader('Verdeling totaal geregistreerde misdrijven')
+    st.subheader('Verdeling totaal geregistreerde misdrijven per jaar')
     
     data_final = pd.read_csv('barplots.csv')
     data = pd.read_csv('barplot_nl.csv')

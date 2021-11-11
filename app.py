@@ -90,7 +90,7 @@ folium.Choropleth(
 
 folium.LayerControl().add_to(m)
 
-folium_static(m)
+folium_static(m, position='center')
 ''
 ''
 ''
